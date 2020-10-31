@@ -1,0 +1,16 @@
+[package]
+name = "vman"
+version = "0.1.0"
+authors = ["Guillem Castro <guillemcastro4@gmail.com>"]
+edition = "2018"
+build = "src/build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+virt = "0.2.11"
+structopt = "0.3"
+color-eyre = "0.5"
+
+[build-dependencies]
+ructe = "0.12.0"

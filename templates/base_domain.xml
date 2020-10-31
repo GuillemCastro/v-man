@@ -1,0 +1,15 @@
+@ use crate::vm::VirtualMachine;
+@(vm: VirtualMachine)
+<?xml version="1.0" encoding="UTF-8"?>
+<domain type='kvm'>
+    <name>@vm.name</name>
+    <memory unit='KiB'>@vm.memory</memory>
+    <vcpus>@vm.cpus</vcpus>
+    <features>
+      <acpi/>
+      <apic/>
+    </features>
+    <os>
+      <type>hvm</type>
+    </os>
+</domain>
